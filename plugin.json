@@ -3,7 +3,7 @@
     "marketplaceName": { "de": "Sofort.", "en": "Online bank transfer." },
     "namespace": "Sofort",
     "type": "payment",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "license": "LGPL-3.0",
     "pluginIcon": "icon_plugin_xs.png",
     "price": 0.00,

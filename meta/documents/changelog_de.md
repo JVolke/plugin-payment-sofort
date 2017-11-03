@@ -1,5 +1,11 @@
 # Versionshinweise für Sofort
 
+## v1.0.2 (03.11.2017)
+
+### Geändert
+
+- Funktion "Automatische Rückzahlung" sollte nicht mehr verwendet werden und wurde entfernt.
+
 ## v1.0.1 (09.10.2017)
 
 ### Geändert

@@ -1,6 +1,12 @@
 # Release Notes for Sofort
 
-## v1.0.1 (09.10.2017)
+## v1.0.2 (2017-11-03)
+
+### Changed
+
+- Automatic refunds should no longer be used and have been removed.
+
+## v1.0.1 (2017-10-09)
 
 ### Changed
 
