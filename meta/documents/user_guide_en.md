@@ -1,16 +1,16 @@
 <div class="alert alert-warning" role="alert">
-   <strong><i>Note:</i></strong> The Sofort plugin has been developed for use with the online store Ceres and only works with its structure or other template plugins. 
+   <strong><i>Note:</i></strong> The sofort-Plugin has been developed for use with the online store Ceres and only works with its structure or other template plugins. 
 </div>
 
-# Sofort - Easy Online payments for plentymarkets Online-Shops
+# Online Bank Transfer - Easy Online payments for plentymarkets Online-Shops
 
-With Sofort for plentymarkets you can add **Sofort** as a payment method to your online shop.
+"Onine Bank Transfer." formerly known as SOFORT is the direct payment system provided by Sofort GmbH - A Klarna Group Company. It allows you to make a wire transfer of the respective amount during the order process using your online banking account - easy, quick and secure – without registration. The online shop can process and deliver your order faster thanks to our real-time transaction notification.
 
-## Creating a Sofort account
+## Creating a Sofort - Merchant account
 
 You need to register at our [Merchant Portal](https://www.sofort.com/payment/users/register) before you are able to use Sofort as a payment method. After registration you will receive the correct information and credentials needed to install and configure the payment method. 
 
-## Installing Sofort in plentymarkets
+## Installing the Sofort-Plugin in plentymarkets
 
 Before using Sofort-Plugin, you need to install the module from the Git or plentyMarketplace.
 
@@ -43,8 +43,7 @@ Before using Sofort-Plugins, you need to connect your Sofort-account with your p
 3. Type in the configuration key 
 	→ You receive the configuration key after successful registration as a Merchant.
 4. Other additional configurations can be set up in the Menu **Extended Settings**.
-5. On the Left Menu **Merchant**, you can set up your Bank Account Details.
-6. Save the configurations.
+5. Save the configurations.
 
 <table>
   <caption>Tab. 1: Sofort Plugin Settings / Base Settings</caption>
@@ -115,110 +114,10 @@ Before using Sofort-Plugins, you need to connect your Sofort-account with your p
   </tbody>
 </table>
 
-<table>
-  <caption>Tab. 3: Sofort Plugin Settings / Merchant</caption>
-  <thead>
-    <th>
-      Einstellung
-    </th>
-    <th>
-      Erläuterung
-    </th>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <b>Recipient holder</b>
-      </td>
-      <td>
-        Merchant depositor
-        <br /><b>Default:</b> -
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <b>IBAN</b>
-      </td>
-      <td>
-        Merchant IBAN	
-        <br /><b>Default:</b> -
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <b>BIC</b>
-      </td>
-      <td>
-        Merchant BIC
-        <br /><b>Default:</b> -
-      </td>
-    </tr>
-  </tbody>
-</table>
-
 ## administrate payment methods
 
 In this chapter you will find out, how to offer the payment methods in your webshop.
 
-### activate Sofort
+### activate Sofort-Plugin
 
 After installing Sofort-Plugin, you need to activate the plugin in the main configuration and at least set the configuration key. Afterwards Sofort ist available without any further adjustments. This payment method appears depending on the priority settings next to other activated payment methods.
-
-## automatic refunds of Sofort payments
-
-Set an event to activate automatic refunds via Sofort.
-
-<div class="alert alert-warning" role="alert">
-   <strong><i>Important:</i></strong> Automatic refunding is only available for merchants who have projects with Deutsche Handelsbank (DHB). 
-</div>
-
-Additional information concerning refunding can be retrieved through our [Integration Center](https://www.sofort.com/integrationCenter-eng-DE/content/view/full/3363). 
-
-##### Set up event procedure:
-
-1. open the menu **Plugins » Plugin overview**.
-2. Click on the Plugin **Sofort** and edit **Configuration**.
-3. type in your banking details in slide **Merchant**.
-4. open the menu **Settings » Orders » Event procedures**.
-5. Click on **Add event procedure**.
-→ a window **Create new event procedure** will be opened.
-6. type in a name.
-7. select event according to table 4.
-8. **Save** this settings.
-9. take setting according to table 4.
-10. Choose hook at **Active**.
-11. **Save** this settings.
-
-<table>
-  <thead>
-    <th>
-      Setting
-    </th>
-    <th>
-      Option
-    </th>
-    <th>
-      Selection
-    </th>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Event</strong></td>
-      <td><strong>Select the event according to which a refund is to be made.</strong></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><strong>Filter 1</strong></td>
-      <td><strong>Order > Payment method</strong></td>
-      <td><strong>Plugin: Sofort</strong></td>
-    </tr>
-    <tr>
-      <td><strong>Action</strong></td>
-      <td><strong>Plugin > Refund of Sofort Payment</strong></td>
-      <td>&nbsp;</td>
-    </tr>
-  </tbody>
-  <caption>
-    Tab. 4: Event procedure for automatic refunds of Sofort payments
-  </caption>
-</table>

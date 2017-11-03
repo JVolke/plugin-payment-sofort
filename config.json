@@ -23,22 +23,5 @@
         "label": "Reason 2",
         "type": "text",
         "default": "Sofort Online Shop"
-    }, {
-        "tab": "Merchant",
-        "key": "recipientHolder",
-        "label": "Recipient holder",
-        "type": "text",
-        "default": ""
-    }, {
-        "tab": "Merchant",
-        "key": "recipientIBAN",
-        "label": "IBAN",
-        "type": "text",
-        "default": ""
-    }, {
-        "tab": "Merchant",
-        "key": "recipientBIC",
-        "label": "BIC",
-        "type": "text",
-        "default": ""
-    }]
+    }
+]

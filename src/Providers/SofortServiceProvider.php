@@ -18,7 +18,6 @@ use Plenty\Plugin\Log\Loggable;
 use Plenty\Plugin\ServiceProvider;
 use Sofort\Helper\PaymentHelper;
 use Sofort\Methods\SofortPaymentMethod;
-use Sofort\Procedures\RefundEventProcedure;
 use Sofort\Providers\SofortRouteServiceProvider;
 use Sofort\Services\PaymentService;
 
@@ -38,7 +37,6 @@ class SofortServiceProvider extends ServiceProvider
 	public function register()
 	{
 		$this->getApplication()->register(SofortRouteServiceProvider::class);
-		$this->getApplication()->bind(RefundEventProcedure::class);
 	}
 	
 	/**
@@ -64,12 +62,6 @@ class SofortServiceProvider extends ServiceProvider
 			FrontendLanguageChanged::class,
 			FrontendShippingCountryChanged::class
 		]);
-
-		$refundNames = [
-			'de' => 'Rückerstattung der Sofort-Zahlung',
-			'en' => 'Refund of Sofort Payment'
-		];
-		$eventProceduresService->registerProcedure('sofort', ProcedureEntry::EVENT_TYPE_ORDER, $refundNames,'\Sofort\Procedures\RefundEventProcedure@run');
 
 		$eventDispatcher->listen(GetPaymentMethodContent::class,
 				function(GetPaymentMethodContent $event) use($paymentHelper, $basket, $paymentService ) {

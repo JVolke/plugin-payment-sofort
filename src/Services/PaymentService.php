@@ -208,6 +208,7 @@ class PaymentService
 	/**
 	 * @param array $refundRequestData
 	 * @return array
+	 * @deprecated v1.0.2
 	 */
 	public function refundPayment($refundRequestData): array
 	{
