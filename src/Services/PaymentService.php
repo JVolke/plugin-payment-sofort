@@ -121,6 +121,7 @@ class PaymentService
 		$this->getLogger(__METHOD__)->debug('SOFORT::General.retrievedValue', ['params' => $sofortRequestParams, 'result' => $paymentResult]);
 
 		if (is_array($paymentResult) && $paymentResult['error']) {
+			$this->getLogger(__METHOD__)->error('SOFORT::General.libCall', ['error' => json_encode($paymentResult)]);
 			$this->returnType = GetPaymentMethodContent::RETURN_TYPE_HTML;
 			$content = $this->twig->render('SOFORT::Error');
 			return $content;
