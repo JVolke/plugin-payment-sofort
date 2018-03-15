@@ -12,5 +12,5 @@
 
 ## Forum
 
-[https://forum.plentymarkets.com/c/non-plenty-plugins](https://forum.plentymarkets.com/c/non-plenty-plugins)  
+[https://forum.plentymarkets.com/c/non-plenty-plugins/sofort](https://forum.plentymarkets.com/c/non-plenty-plugins/sofort)
 @Payment-FS
