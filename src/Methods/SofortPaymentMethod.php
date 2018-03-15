@@ -9,7 +9,6 @@ use Plenty\Modules\Payment\Method\Contracts\PaymentMethodService;
 use Plenty\Plugin\ConfigRepository;
 use Plenty\Plugin\Log\Loggable;
 use Sofort\Utility\DivUtility;
-use Sofort\Constants\SofortConstants;
 
 /**
  * Class SofortPaymentMethod
