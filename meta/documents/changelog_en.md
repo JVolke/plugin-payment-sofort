@@ -1,5 +1,9 @@
 # Release Notes for Sofort
 
+## v1.0.3 (2018-03-19)
+
+- We brought the garbage out: the manual was expanded and code improvements were made.
+
 ## v1.0.2 (2017-11-03)
 
 ### Changed

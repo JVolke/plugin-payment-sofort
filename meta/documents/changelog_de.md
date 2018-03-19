@@ -1,5 +1,9 @@
 # Versionshinweise für Sofort
 
+## v1.0.3 (19.03.2018)
+
+- Wir haben den Müll rausgebracht: das Handbuch wurde erweitert und Codeverbesserungen wurden durchgeführt.
+
 ## v1.0.2 (03.11.2017)
 
 ### Geändert
