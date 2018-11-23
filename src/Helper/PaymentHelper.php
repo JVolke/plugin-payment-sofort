@@ -164,7 +164,7 @@ class PaymentHelper
 		$preparePayment = pluginApp(Payment::class);
 
 		$preparePayment->mopId = (int) $this->getSofortMopId();
-		$preparePayment->transactionType = Payment::TRANSACTION_TYPE_BOOKED_POSTING;
+		$preparePayment->transactionType = Payment::TRANSACTION_TYPE_PROVISIONAL_POSTING;
 		$preparePayment->status = $this->mapStatus((string) $paymentData['status']);
 		$preparePayment->currency = $paymentData['currency'];
 		$preparePayment->amount = $paymentData['amount'];
