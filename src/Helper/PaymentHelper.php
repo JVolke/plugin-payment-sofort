@@ -22,7 +22,7 @@ use Sofort\Services\SessionStorageService;
 
 /**
  * Class PaymentHelper
- * 
+ *
  * @package Sofort\Helper
  */
 class PaymentHelper
@@ -169,6 +169,7 @@ class PaymentHelper
 		$preparePayment->currency = $paymentData['currency'];
 		$preparePayment->amount = $paymentData['amount'];
 		$preparePayment->receivedAt = $paymentData['entryDate'];
+		$preparePAyment->unaccountable = 1;
 
 		$preparePayment->hash = md5('sofort_'.time());
 
@@ -335,7 +336,7 @@ class PaymentHelper
 				$this->statusMap['accepted'] = $statusConstants['approved'];
 			}
 		}
-		
+
 		return (int) $this->statusMap[$status];
 	}
 
