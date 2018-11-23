@@ -166,7 +166,7 @@ class PaymentHelper
 		$preparePayment->mopId = (int) $this->getSofortMopId();
 		$preparePayment->transactionType = Payment::TRANSACTION_TYPE_PROVISIONAL_POSTING;
 		//$preparePayment->status = $this->mapStatus((string) $paymentData['status']);
-		$preparePayment->status = 'approved';
+		$preparePayment->status = 2;
 		$preparePayment->currency = $paymentData['currency'];
 		$preparePayment->amount = $paymentData['amount'];
 		$preparePayment->receivedAt = $paymentData['entryDate'];
