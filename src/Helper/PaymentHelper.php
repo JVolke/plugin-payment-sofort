@@ -169,7 +169,7 @@ class PaymentHelper
 		$preparePayment->currency = $paymentData['currency'];
 		$preparePayment->amount = $paymentData['amount'];
 		$preparePayment->receivedAt = $paymentData['entryDate'];
-		$preparePAyment->unaccountable = 1;
+		$preparePayment->unaccountable = 1;
 
 		$preparePayment->hash = md5('sofort_'.time());
 
